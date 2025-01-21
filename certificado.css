@@ -1,0 +1,292 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+}
+
+/* Header principal */
+.header1 {
+    background-color: #4b2020;
+    color: #e9e89e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header1 .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header1 .nome-empresa {
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #e9e89e;
+    margin-left: 20px;
+}
+
+.header1 nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header1 nav ul li a {
+    display: block;
+}
+
+.header1 nav ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo para o header2 */
+.header2 {
+    background-color: #e0c9c5;
+    color: #000;
+    padding: 15px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header2 nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header2 nav ul li {
+    padding: 5px 10px;
+}
+
+.header2 nav ul li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header2 nav ul li a:hover {
+    background-color: #4b2020;
+    color: #fff;
+}
+
+.header2 nav ul li span {
+    font-size: 16px;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #4b2020;
+    margin: 5px 0;
+}
+
+/* Título Certificado */
+.titctf h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b2020;
+    margin-bottom: 20px;
+    margin-top: 16px;
+}
+
+/* Container do produto */
+.containerctf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #4b2020;
+}
+
+.product-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.buttonn2 {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4b2020;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.buttonn2:hover {
+    background-color: #5c2a2a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Informações adicionais */
+.paragrafocert {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+.pctf1 {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.h1ctf {
+    font-size: 2rem;
+    text-align: center;
+    color: #4b2020;
+    margin-bottom: 15px;
+}
+
+.pctf2 {
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #4b2020;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    text-align: center;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .header1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header1 .nome-empresa {
+        font-size: 1.5rem;
+    }
+
+    .header1 nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product img {
+        width: 150px;
+    }
+
+    .product-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttonn2 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .titctf h1 {
+        font-size: 2rem;
+    }
+
+    .pctf2 {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header1 .nome-empresa {
+        font-size: 1.6rem;
+    }
+
+    .product img {
+        width: 180px;
+    }
+
+    .product-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .buttonn2 {
+        font-size: 1.1rem;
+        padding: 11px 22px;
+    }
+
+    .titctf h1 {
+        font-size: 2.2rem;
+    }
+
+    .pctf2 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}

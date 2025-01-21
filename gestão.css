@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+  }
+  /* Estilo para o header1 */
+.header1 {
+  background-color: #4b2020; /* Cor de fundo do header */
+  color: #e9e89e; /* Cor do texto */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.header1 .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header1 .nome-empresa {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #e9e89e; /* Cor da fonte do nome da empresa */
+  margin-left: 20px;
+}
+
+.header1 nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header1 nav ul li a {
+  display: block;
+}
+
+.header1 nav ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilo para o header2 */
+.header2 {
+  background-color: #e0c9c5; /* Cor de fundo do segundo header */
+  color: #000;
+  padding: 15px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.header2 nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header2 nav ul li {
+  padding: 5px 10px;
+}
+
+.header2 nav ul li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header2 nav ul li a:hover {
+  background-color: #4b2020;
+  color: #fff;
+}
+
+.header2 nav ul li span {
+  font-size: 16px;
+  color: #000000;
+}
+.conteudo-principal {
+  display: flex;
+  justify-content: center;
+  align-items: stretch; /* Garante que todas as caixas tenham a mesma altura */
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.caixa-conteudo {
+  background-color: #fff;
+  width: 300px;
+  min-height: 450px; /* Altura mínima para todas as caixas */
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 2px solid #4b2020;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.caixa-conteudo img {
+  width: 100%; /* Imagem ocupa toda a largura da caixa */
+  height: auto; /* Mantém a proporção da imagem */
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.caixa-conteudo h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+  color: #4b2020;
+}
+
+.caixa-conteudo p {
+  flex-grow: 1; /* Faz o texto expandir para ocupar o espaço necessário */
+  margin: 10px 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+.caixa-conteudo .botao-link {
+  background-color: #4b2020;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.caixa-conteudo .botao-link:hover {
+  background-color: #3a1717;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #4b2020;
+    margin: 2px 0;
+  }
+.footer {
+    background-color: #4b2020;
+    color: #ccc;
+    text-align: center; /* Centraliza o texto dentro de cada elemento */
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+    display: flex; /* Ativa Flexbox */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Alinha horizontalmente ao centro */
+    justify-content: center; /* Garante alinhamento vertical */
+}
+
+.footer p {
+    margin: 5px 0; /* Adiciona espaço entre os parágrafos */
+    text-align: center; /* Garante que cada parágrafo esteja centralizado */
+    display: block; /* Garante que cada parágrafo ocupe uma linha */
+}

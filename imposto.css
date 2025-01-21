@@ -1,0 +1,296 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f4f4f4;
+}
+
+/* Estilo para o header1 */
+.header1 {
+  background-color: #4b2020; /* Cor de fundo do header */
+  color: #e9e89e; /* Cor do texto */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.header1 .logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+.header1 .nome-empresa {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #e9e89e; /* Cor da fonte do nome da empresa */
+  margin-left: 20px;
+}
+
+.header1 nav ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+}
+
+.header1 nav ul li a {
+  display: block;
+}
+
+.header1 nav ul li a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilo para o header2 */
+.header2 {
+  background-color: #e0c9c5; /* Cor de fundo do segundo header */
+  color: #000;
+  padding: 5px 0;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.header2 nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.header2 nav ul li {
+  padding: 5px 10px;
+}
+
+.header2 nav ul li a {
+  color: #000;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.header2 nav ul li a:hover {
+  background-color: #4b2020;
+  color: #fff;
+}
+
+.header2 nav ul li span {
+  font-size: 16px;
+  color: #000000;
+}
+
+/* Títulos e separadores */
+h1, h2, h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #4b2020;
+  margin: 5px 0;
+}
+
+/* Links e botões */
+a {
+  text-decoration: none; /* Remove o sublinhado padrão */
+  color: #000; /* Cor inicial do link */
+  transition: color 0.3s, background-color 0.3s; /* Animação suave */
+}
+
+a:hover {
+  color: #fff; /* Cor do texto ao passar o mouse */
+  background-color: #fd6c6c; /* Cor de fundo para destaque */
+  padding: 2px 4px; /* Pequeno preenchimento para efeito */
+  border-radius: 4px; /* Cantos arredondados */
+}
+
+.botaum {
+  background-color: #4b2020;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaum:hover {
+  background-color: #5c2a2a;
+}
+
+/* Parágrafos e listas */
+p, li {
+  text-align: justify;
+  margin: 10px 0;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 40px;
+}
+
+/* Seções */
+.impcontainerr {
+  text-align: center;
+  padding: 20px;
+  font-size: 50px;
+}
+
+.façasua {
+  text-align: center;
+  padding: 20px;
+}
+
+.cont-imp, .container3, .container4 {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+}
+
+/* Tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  text-align: left;
+}
+
+table th, table td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Rodapé */
+.footer {
+  background-color: #4b2020;
+  color: #ccc;
+  text-align: center; /* Centraliza o texto dentro de cada elemento */
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: auto;
+  display: flex; /* Ativa Flexbox */
+  flex-direction: column; /* Empilha os elementos verticalmente */
+  align-items: center; /* Alinha horizontalmente ao centro */
+  justify-content: center; /* Garante alinhamento vertical */
+}
+
+.footer p {
+  margin: 5px 0; /* Adiciona espaço entre os parágrafos */
+  text-align: center; /* Garante que cada parágrafo esteja centralizado */
+  display: block; /* Garante que cada parágrafo ocupe uma linha */
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  .header1 {
+      flex-direction: column;
+      text-align: center;
+      padding: 10px;
+  }
+
+  .header1 .nome-empresa {
+      font-size: 1.5rem;
+      margin-left: 0;
+  }
+
+  .header1 nav ul {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+  }
+
+  .header1 nav ul li a img {
+      width: 25px;
+      height: 25px;
+  }
+
+  .header2 nav ul {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .façasua {
+      padding: 10px;
+  }
+
+  .impcontainerr {
+      font-size: 1.2rem;
+      padding: 15px;
+  }
+
+  .cont-imp, .container3, .container4 {
+      padding: 15px;
+      margin: 15px;
+      width: 90%;
+  }
+
+  table {
+      font-size: 0.8rem;
+  }
+
+  .footer {
+      font-size: 0.8rem;
+      padding: 15px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .header1 .nome-empresa {
+      font-size: 1.6rem;
+  }
+
+  .header1 nav ul {
+      gap: 20px;
+  }
+
+  .façasua {
+      padding: 15px;
+  }
+
+  .impcontainerr {
+      font-size: 1.4rem;
+  }
+
+  .cont-imp, .container3, .container4 {
+      width: 85%;
+      padding: 18px;
+  }
+
+  table {
+      font-size: 0.9rem;
+  }
+}
