@@ -9,7 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // Carregador (loader) ao iniciar o site
-    setupLoader();
+    function setupLoader(){
+        
+    }
 
     // Adiciona hover dinâmico nas imagens da galeria
     const galleryImages = document.querySelectorAll(".gallery img");
