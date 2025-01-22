@@ -8,19 +8,16 @@ document.addEventListener("DOMContentLoaded", function () {
         form.addEventListener("submit", handleFormSubmit);
     }
 
-    // Inicializa o carregador (loader) ao iniciar o site
-    setupLoader();
+    // Carregador (loader) ao iniciar o site
+    function setupLoader(){
+        
+    }
 
     // Adiciona hover dinâmico nas imagens da galeria
     const galleryImages = document.querySelectorAll(".gallery img");
     galleryImages.forEach((img) => {
-        img.addEventListener("mouseenter", () => {
-            img.style.transform = "scale(1.1)";
-            img.style.transition = "transform 0.3s ease";
-        });
-        img.addEventListener("mouseleave", () => {
-            img.style.transform = "scale(1)";
-        });
+        img.addEventListener("mouseenter", () => (img.style.transform = "scale(1.1)"));
+        img.addEventListener("mouseleave", () => (img.style.transform = "scale(1)"));
     });
 });
 
@@ -39,45 +36,17 @@ function highlightCurrentPage() {
 }
 
 /**
- * Inicializa o carregador (loader)
- */
-function setupLoader() {
-    const loader = document.createElement("div");
-    loader.id = "loader";
-    loader.style.position = "fixed";
-    loader.style.top = "0";
-    loader.style.left = "0";
-    loader.style.width = "100%";
-    loader.style.height = "100%";
-    loader.style.background = "rgba(255, 255, 255, 0.8)";
-    loader.style.zIndex = "1000";
-    loader.style.display = "flex";
-    loader.style.justifyContent = "center";
-    loader.style.alignItems = "center";
-    loader.innerText = "Carregando...";
-    document.body.appendChild(loader);
-
-    // Simula o tempo de carregamento e remove o loader após 2 segundos
-    setTimeout(() => {
-        loader.remove();
-    }, 2000);
-}
-
-/**
  * Manipula o envio do formulário e exibe a mensagem de sucesso
  */
 function handleFormSubmit(event) {
     event.preventDefault(); // Impede o envio padrão do formulário
 
-    const nome = document.getElementById("nome")?.value; // Obtém o nome do campo 'nome'
-    if (!nome) {
-        alert("Por favor, preencha o campo nome.");
-        return;
-    }
+    const nome = document.getElementById("nome").value; // Obtém o nome do campo 'nome'
 
     // Exibe a mensagem de sucesso
     alert(`Formulário enviado com sucesso! Obrigado, ${nome}.`);
 
     // Opcional: Enviar o formulário após mostrar a mensagem
+    // Se você não quiser interromper o envio normal do formulário, use a linha abaixo
     event.target.submit();
 }
