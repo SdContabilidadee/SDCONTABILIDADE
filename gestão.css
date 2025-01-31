@@ -69,7 +69,7 @@
 }
 
 .header2 nav ul li {
-  padding: 5px 10px;
+  padding: px 10px;
 }
 
 .header2 nav ul li a {
@@ -148,7 +148,7 @@
 hr {
     border: none;
     border-top: 2px solid #4b2020;
-    margin: 2px 0;
+    margin:  0;
   }
 .footer {
     background-color: #4b2020;
