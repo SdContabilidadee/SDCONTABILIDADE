@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: 'calibri', Times, serif;
   line-height: 1.6;
   color: #333;
   display: flex;
@@ -38,7 +38,6 @@ hr {
 
 .header1 .nome-empresa {
   font-size: 1.7rem;
-  font-weight: bold;
   color: #e9e89e; /* Cor da fonte do nome da empresa */
   margin-left: 20px;
 }
