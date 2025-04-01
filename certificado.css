@@ -1,77 +1,300 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SD Contabilidade e Assessoria Empresarial</title>
-    <link rel="stylesheet" href="certificado.css">
-    <script src="script.js" defer></script>
-</head>
-<body>
-    <!-- Header principal -->
-    <header class="header1">
-        <div class="logo">
-            <img src="logo.png" alt="Logo da Empresa" width="180" height="120">
-        </div>
-        <div class="nome-empresa">SD CONTABILIDADE E ASSESSORIA EMPRESARIAL</div>
-        <nav>
-            <ul>
-                <li><a href="https://wa.me/+55042984082111" target="_blank"><img src="whats.png" alt="WhatsApp" width="30" height="30"></a></li>
-                <li><a href="https://www.instagram.com/secchiedamiani" target="_blank"><img src="instagram.png" alt="Instagram" width="30" height="30"></a></li>
-                <li><a href="https://www.facebook.com/sdempresarial" target="_blank"><img src="facebookK.png" alt="Facebook" width="30" height="30"></a></li>
-            </ul>
-        </nav>
-    </header>
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    <!-- Header secundário -->
-    <header class="header2">
-        <nav>
-            <ul>
-                <li><a href="index.html" class="muda-cor">Página inicial</a></li>
-                <li><a href="ImpostodeRenda.html" class="muda-cor">Imposto de renda</a></li>
-                <li><a href="https://connect.calima.app/#/login/" target="_blank" class="muda-cor">Área do cliente</a></li>
-                <li><a href="certificado.html" class="muda-cor">Certificado digital</a></li>
-                <li><a href="Sistemadegestão.html" class="muda-cor">Sistema de gestão</a></li>
-            </ul>
-        </nav>
-    </header>
-    
-    <hr>
+body {
+    font-family: 'calibri', Times, serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0;
+}
 
-    <div class="titctf">
-        <h1> CERTIFICADO DIGITAL</h1>
-    </div>
-    <hr>
-    <div class="containerctf">
-        <div class="product">
-            <img src="certificado.png" alt="Nome do Produto">
-            <div class="product-info">
-                <h2>Certificado Digital modelo A1</h2>
-                <p>Efetue a compra do seu certificado:</p>
-                <a href="https://mpago.li/1H23hQu" class="buttonn2" target="_blank">Comprar Agora</a>
-                <a href="https://eagenda.com.br/agendamentos/incluir/videoconferencia/4148475A/3201861S" class="buttonn2" target="_blank">Agendamento</a>
-            </div>
-        </div>
-    </div>
-    
-    <p class="pctf3"> Após a compra do Certificado Digital, você será redirecionado para o nosso WhatsApp, onde faremos o agendamento da videoconferência.
-    Caso restem dúvidas, os esclarecimentos pode ser no Endereço: R Quinze de Novembro, 1895, Sala 07 </li></h1>
-    
-    <div class="pctf1">
-        <h1 class="h1ctf">Qual a importância do Certificado Digital?</h1>
-        <p class="pctf2">O certificado digital é um documento eletrônico que possibilita a assinatura digital de arquivos online, conferindo-lhes validade jurídica e autenticidade, além de facilitar transações e o cumprimento de obrigações empresariais pela internet, eliminando a necessidade de deslocamento físico.</p>
-        <p class="pctf2">
-            Essa forma de assinatura busca substituir o uso de documentos em papel, promovendo segurança nas transações eletrônicas. Prevê-se que, com o tempo, o certificado digital se torne tão comum quanto a assinatura manual e a firma reconhecida em cartório, sendo já obrigatório para muitas empresas ao lidar com o governo.
-        </p>
-    </div>
-    <hr>
+/* Header principal */
+.header1 {
+    background-color: #4b2020;
+    color: #e9e89e;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
-    <!-- Footer -->
-    <div class="footer">
-        <p><b>Email: secchiedamiani@gmail.com | Telefone: (42) 98408-2111</b></p>
-        <p>CNPJ: 46.038.629/0001-21</p>
-        <p>Endereço: R Quinze de Novembro, 1895, Sala 07</p>
-        <p>&copy 2023 SD Contabilidade e Assessoria Empresarial</p>
-    </div>
-</body>
-</html>
+.header1 .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.header1 .nome-empresa {
+    font-size: 1.7rem;
+    color: #e9e89e;
+    margin-left: 20px;
+}
+
+.header1 nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 15px;
+}
+
+.header1 nav ul li a {
+    display: block;
+}
+
+.header1 nav ul li a img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilo para o header2 */
+.header2 {
+    background-color: #e0c9c5;
+    color: #000;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.header2 nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header2 nav ul li {
+    padding: 5px 10px;
+}
+
+.header2 nav ul li a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.header2 nav ul li a:hover {
+    background-color: #4b2020;
+    color: #fff;
+}
+
+.header2 nav ul li span {
+    font-size: 16px;
+    color: #000000;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #4b2020;
+    margin:  0;
+}
+
+/* Título Certificado */
+.titctf h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4b2020;
+    margin-bottom: 20px;
+    margin-top: 16px;
+}
+
+/* Container do produto */
+.containerctf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.product img {
+    width: 200px;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #4b2020;
+}
+
+.product-info h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-info p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+    color: #555;
+}
+
+.buttonn2 {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #4b2020;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.buttonn2:hover {
+    background-color: #5c2a2a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* Informações adicionais */
+.paragrafocert {
+    text-align: center;
+    font-size: 1rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+.pctf1 {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pctf3 {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.h1ctf {
+    font-size: 2rem;
+    text-align: center;
+    color: #4b2020;
+    margin-bottom: 15px;
+}
+
+.pctf2 {
+    text-align: justify;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Footer */
+.footer {
+    background-color: #4b2020;
+    color: #ccc;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin: 5px 0;
+    text-align: center;
+    display: block;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .header1 {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header1 .nome-empresa {
+        font-size: 1.5rem;
+    }
+
+    .header1 nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .product img {
+        width: 150px;
+    }
+
+    .product-info h2 {
+        font-size: 1.5rem;
+    }
+
+    .buttonn2 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .titctf h1 {
+        font-size: 2rem;
+    }
+
+    .pctf2 {
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header1 .nome-empresa {
+        font-size: 1.6rem;
+    }
+
+    .product img {
+        width: 180px;
+    }
+
+    .product-info h2 {
+        font-size: 1.6rem;
+    }
+
+    .buttonn2 {
+        font-size: 1.1rem;
+        padding: 11px 22px;
+    }
+
+    .titctf h1 {
+        font-size: 2.2rem;
+    }
+
+    .pctf2 {
+        font-size: 1rem;
+    }
+
+    .footer {
+        font-size: 0.9rem;
+    }
+}
